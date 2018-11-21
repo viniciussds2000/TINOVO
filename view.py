@@ -1,4 +1,5 @@
 from tkinter import *
+from venda import Tela_venda
 
 class Patio_1(Tk):
     def __init__(self):
@@ -8,7 +9,7 @@ class Patio_1(Tk):
         self.geometry("400x400")
         self.title("Concessionaria TINOVO ")
 
-        self.bt = Button(self, width=10, height=3, text="UNO")
+        self.bt = Button(self, width=10, height=3, text="UNO", command=self.btn_venda)
         self.bt2 = Button(self, width=10, height=3, text="Hilux")
         self.bt3 = Button(self, width=10, height=3, text="UP")
         self.bt4 = Button(self, width=10, height=3, text="KA")
@@ -20,11 +21,9 @@ class Patio_1(Tk):
         self.bt4.place(x=50, y=150)
         self.bt5.place(x=150, y=150)
 
-''
-
-
     
-    def btn_click(self):
-        open(Tela_venda())
-class Tela_Venda():
-'''
+    def btn_venda(self):
+        Tela_venda(self)
+
+
+
