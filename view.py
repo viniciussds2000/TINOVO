@@ -21,7 +21,7 @@ class Patio_1(Tk):
         self.bt4.place(x=50, y=150)
         self.bt5.place(x=150, y=150)
 
-    
+
     def btn_venda(self):
         Tela_venda(self)
 
