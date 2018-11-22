@@ -15,12 +15,11 @@ class Patio_1(Tk):
         self.bt4 = Button(self, width=10, height=3, text="KA")
         self.bt5 = Button(self, width=10, height=3, text="CORSA")
 
-        self.bt.place(x=50, y=50)
-        self.bt2.place(x=150, y=50)
-        self.bt3.place(x=250, y=50)
-        self.bt4.place(x=50, y=150)
-        self.bt5.place(x=150, y=150)
-
+        self.bt.grid(row=1,column=1)
+        self.bt2.grid(row=1,column=2)
+        self.bt3.grid(row=1,column=3)
+        self.bt4.grid(row=2,column=1)
+        self.bt5.grid(row=2,column=2)
 
     def btn_venda(self):
         Tela_venda(self)
